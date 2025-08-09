@@ -1,0 +1,16 @@
+{
+    "nav": { 
+        "projects": "Projekty", 
+        "about": "O mnie", 
+        "contact": "Kontakt" 
+    },
+    "hero": {
+        "title": "Anna Heliasz — Full-Stack JavaScript Developer",
+        "subtitle": "Tworzę nowoczesne, wydajne aplikacje JS/TS, czasem łącząc moje doświadczenie lingwistyczne z funkcjami AI, aby poprawić wrażenia użytkowników.",
+        "ctaProjects": "Zobacz projekty",
+        "ctaContact": "Napisz do mnie"
+    },
+    "sections": { 
+        "projects": "Najważniejsze projekty" 
+    }
+}

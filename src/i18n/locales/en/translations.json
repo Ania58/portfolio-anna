@@ -1,0 +1,16 @@
+{
+    "nav": { 
+        "projects": "Projects", 
+        "about": "About", 
+        "contact": "Contact" 
+    },
+    "hero": {
+        "title": "Anna Heliasz — Full-Stack JavaScript Developer",
+        "subtitle": "I create modern, efficient JS/TS applications, sometimes combining my linguistics background with AI features to improve user experience.",
+        "ctaProjects": "View Projects",
+        "ctaContact": "Contact me"
+    },
+    "sections": { 
+        "projects": "Featured Projects" 
+    }
+}
