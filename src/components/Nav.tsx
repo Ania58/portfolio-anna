@@ -27,13 +27,11 @@ export default function Nav() {
 
       <div className="mx-auto max-w-5xl px-4">
         <nav className="relative flex items-center justify-between rounded-2xl border border-white/40 bg-white/50 backdrop-blur-md shadow-sm px-4 py-3">
-          {/* Logo + imię */}
           <Link to="/" className="flex items-center gap-2 font-semibold text-slate-900">
             <img src="/images/logo.png" alt="" className="h-7 w-7 rounded-md object-contain" />
             <span>Anna Heliasz</span>
           </Link>
 
-          {/* Burger (mobile) */}
           <button
             type="button"
             className="md:hidden inline-flex items-center rounded-lg border border-white/50 bg-white/40 px-3 py-2 backdrop-blur-sm text-slate-900/80 hover:text-slate-900"
@@ -47,7 +45,6 @@ export default function Nav() {
             </svg>
           </button>
 
-          {/* DESKTOP: czysto, bez tła/ramki */}
           <div className="hidden md:flex items-center gap-6">
             <NavLink to="/projects" className={linkClass}>{t('nav.projects')}</NavLink>
             <NavLink to="/about" className={linkClass}>{t('nav.about')}</NavLink>
@@ -56,7 +53,6 @@ export default function Nav() {
           </div>
         </nav>
 
-        {/* MOBILE: rozwijane menu jako „pigułka” pod nawigacją */}
         {open && (
           <div
             id="main-nav"
