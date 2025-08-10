@@ -13,12 +13,19 @@
     "sections": { 
         "projects": "Featured Projects" 
     },
+    "project": {
+        "live": "Live",
+        "codeFrontend": "Frontend Code",
+        "codeBackend": "Backend Code",
+        "highlights": "Highlights",
+        "stack": "Tech stack"
+    },
     "projects": {
         "sayright": {
             "title": "SayRight",
             "value": "Pronunciation practice with IPA, native recordings, and concise AI feedback.",
             "highlights": ["IPA + audio player", "AI feedback", "3-language UI"],
-            "note": "AI feedback is in its beta fase."
+            "note": "AI feedback is in its beta phase."
         },
         "lolture": {
             "title": "Lolture",

@@ -13,6 +13,13 @@
     "sections": { 
         "projects": "Proyectos destacados" 
     },
+    "project": {
+        "live": "En vivo",
+        "codeFrontend": "Código del frontend",
+        "codeBackend": "Código del backend",
+        "highlights": "Aspectos destacados",
+        "stack": "Tecnologías"
+    },
     "projects": {
         "sayright": {
             "title": "SayRight",
