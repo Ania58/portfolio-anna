@@ -48,5 +48,10 @@
         "title": "Contact",
         "email": "Email",
         "linkedin": "LinkedIn"
+    },
+    "notFound": {
+        "title": "Page not found",
+        "description": "Sorry, the page you are looking for doesn't exist.",
+        "backHome": "Go back to Home"
     }
 }

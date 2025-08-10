@@ -48,5 +48,10 @@
         "title": "Kontakt",
         "email": "E-mail",
         "linkedin": "LinkedIn"
+    },
+    "notFound": {
+        "title": "Strona nie została znaleziona",
+        "description": "Przepraszamy, ale strona, której szukasz, nie istnieje.",
+        "backHome": "Wróć na stronę główną"
     }
 }

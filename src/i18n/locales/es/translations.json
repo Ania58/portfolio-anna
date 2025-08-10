@@ -48,5 +48,10 @@
         "title": "Contacto",
         "email": "Correo electrónico",
         "linkedin": "LinkedIn"
+    },
+    "notFound": {
+        "title": "Página no encontrada",
+        "description": "Lo sentimos, la página que buscas no existe.",
+        "backHome": "Volver al inicio"
     }
 }
