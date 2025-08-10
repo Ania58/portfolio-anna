@@ -12,5 +12,25 @@
     },
     "sections": { 
         "projects": "Najważniejsze projekty" 
+    },
+    "projects": {
+        "sayright": {
+            "title": "SayRight",
+            "value": "Ćwiczenia wymowy z IPA, nagraniami native speakerów i zwięzłą informacją zwrotną AI.",
+            "highlights": ["IPA + odtwarzacz audio", "Informacja zwrotna AI", "Interfejs w 3 językach"],
+            "note": "Informacja zwrotna AI jest w fazie beta."
+        },
+        "lolture": {
+            "title": "Lolture",
+            "value": "Społecznościowa strona z memami/filmami, głosowaniem i kategoriami.",
+            "highlights": ["Głosowanie w górę/w dół", "Kategorie i tagi", "Widoki listy i szczegółów"],
+            "note": "Może ładować się wolno na darmowym hostingu."
+        },
+        "eitheror": {
+            "title": "EitherOr",
+            "value": "Zabawna aplikacja internetowa, w której użytkownicy odpowiadają na pytania typu 'Wolałbyś...' i widzą statystyki na żywo.",
+            "highlights": ["Interaktywne głosowanie", "Wyświetlanie wyników na żywo", "Responsywny design"],
+            "note": "To nie jest w pełni rozwinięta strona, a jedynie małe demo."
+        }
     }
 }

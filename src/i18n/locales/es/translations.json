@@ -12,5 +12,25 @@
     },
     "sections": { 
         "projects": "Proyectos destacados" 
+    },
+    "projects": {
+        "sayright": {
+            "title": "SayRight",
+            "value": "Práctica de pronunciación con IPA, grabaciones de hablantes nativos y retroalimentación concisa de IA.",
+            "highlights": ["IPA + reproductor de audio", "Retroalimentación de IA", "Interfaz en 3 idiomas"],
+            "note": "La retroalimentación de IA está en fase beta."
+        },
+        "lolture": {
+            "title": "Lolture",
+            "value": "Sitio social de memes/vídeos con votaciones y categorías.",
+            "highlights": ["Votación positiva/negativa", "Categorías y etiquetas", "Vistas de lista y detalles"],
+            "note": "Puede cargarse lentamente en alojamiento gratuito."
+        },
+        "eitheror": {
+            "title": "EitherOr",
+            "value": "Aplicación web divertida donde los usuarios responden preguntas de '¿Qué prefieres?' y ven estadísticas en tiempo real.",
+            "highlights": ["Votación interactiva", "Visualización de resultados en tiempo real", "Diseño adaptable"],
+            "note": "No es un sitio web completamente desarrollado, solo una pequeña demo."
+        }
     }
 }

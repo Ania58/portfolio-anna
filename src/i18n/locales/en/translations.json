@@ -12,5 +12,25 @@
     },
     "sections": { 
         "projects": "Featured Projects" 
+    },
+    "projects": {
+        "sayright": {
+            "title": "SayRight",
+            "value": "Pronunciation practice with IPA, native recordings, and concise AI feedback.",
+            "highlights": ["IPA + audio player", "AI feedback", "3-language UI"],
+            "note": "AI feedback is in its beta fase."
+        },
+        "lolture": {
+            "title": "Lolture",
+            "value": "A social site for memes/videos with voting and categories.",
+            "highlights": ["Up/Down voting", "Categories & tags", "List and details views"],
+            "note": "May load slowly on free hosting."
+        },
+        "eitheror": {
+            "title": "EitherOr",
+            "value": "A fun web app where users answer 'Would you rather' questions and see live stats.",
+            "highlights": ["Interactive voting", "Live results display", "Responsive design"],
+            "note": "This is not a fully fledged website, just a small demo."
+        }
     }
 }
