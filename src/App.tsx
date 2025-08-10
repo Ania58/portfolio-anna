@@ -1,30 +1,25 @@
 import './App.css'
-import Nav from './components/Nav'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-function App() {
+import MainLayout from './layout/MainLayout'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
+
+export default function App() {
   return (
-    <div className="min-h-screen text-slate-900">
-      <Nav />
-
-      <main id="main" className="mx-auto max-w-5xl px-4 py-10">
-        <section id="projects" className="py-8">
-          <h2 className="text-2xl font-semibold mb-2">Projects</h2>
-          <p>Project list will go here.</p>
-        </section>
-
-        <section id="about" className="py-8">
-          <h2 className="text-2xl font-semibold mb-2">About</h2>
-          <p>About section placeholder.</p>
-        </section>
-
-        <section id="contact" className="py-8">
-          <h2 className="text-2xl font-semibold mb-2">Contact</h2>
-          <p>Contact section placeholder.</p>
-        </section>
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
-
-export default App
-
