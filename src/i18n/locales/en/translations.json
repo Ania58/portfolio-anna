@@ -39,5 +39,9 @@
             "highlights": ["Interactive voting", "Live results display", "Responsive design"],
             "note": "This is not a fully fledged website, just a small demo."
         }
+    },
+    "about": {
+        "title": "About",
+        "content": "I am Anna Heliasz, a Full-Stack JavaScript Developer passionate about building modern, efficient web applications. I combine my programming skills with my background in linguistics to create unique user experiences, sometimes enhanced with AI."
     }
 }
