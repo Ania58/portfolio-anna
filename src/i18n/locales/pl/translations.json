@@ -40,8 +40,13 @@
             "note": "To nie jest w pełni rozwinięta strona, a jedynie małe demo."
         }
     },
-        "about": {
+    "about": {
         "title": "O mnie",
         "content": "Jestem Anna Heliasz, Full-Stack JavaScript Developer z pasją do tworzenia nowoczesnych i wydajnych aplikacji internetowych. Łączę umiejętności programistyczne z doświadczeniem w lingwistyce, aby tworzyć unikalne doświadczenia użytkowników, czasem wzbogacone o sztuczną inteligencję."
+    },
+    "contact": {
+        "title": "Kontakt",
+        "email": "E-mail",
+        "linkedin": "LinkedIn"
     }
 }

@@ -43,5 +43,10 @@
     "about": {
         "title": "About",
         "content": "I am Anna Heliasz, a Full-Stack JavaScript Developer passionate about building modern, efficient web applications. I combine my programming skills with my background in linguistics to create unique user experiences, sometimes enhanced with AI."
+    },
+    "contact": {
+        "title": "Contact",
+        "email": "Email",
+        "linkedin": "LinkedIn"
     }
 }
