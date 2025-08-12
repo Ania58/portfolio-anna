@@ -42,7 +42,12 @@
     },
     "about": {
         "title": "About",
-        "content": "I am Anna Heliasz, a Full-Stack JavaScript Developer passionate about building modern, efficient web applications. I combine my programming skills with my background in linguistics to create unique user experiences, sometimes enhanced with AI."
+        "photoAlt": "Photo of Anna Heliasz",
+        "p1": "I am Anna Heliasz — a Full-Stack JavaScript Developer. I build modern, functional web applications and constantly work on expanding my skills.",
+        "p2": "On the frontend, I work with React and TypeScript; on the backend, with Node.js/Express. Depending on the project, I use MongoDB or PostgreSQL. I am experienced with Firebase authentication, REST APIs, and deployments on Netlify and Railway.",
+        "p3": "I have built projects such as SayRight (a pronunciation app with IPA, native speaker recordings, and AI feedback), a memes/videos platform with voting, and a job application tracker. My projects focus on clean code, accessibility, and performance.",
+        "p4": "Before programming, I taught English, which allows me to combine technical skills with experience in creating intuitive interfaces in EN/PL/ES.",
+        "p5": "I use AI only when it genuinely enhances project quality and I can fully control its operation and costs."
     },
     "contact": {
         "title": "Contact",

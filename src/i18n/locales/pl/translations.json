@@ -42,7 +42,12 @@
     },
     "about": {
         "title": "O mnie",
-        "content": "Jestem Anna Heliasz, Full-Stack JavaScript Developer z pasją do tworzenia nowoczesnych i wydajnych aplikacji internetowych. Łączę umiejętności programistyczne z doświadczeniem w lingwistyce, aby tworzyć unikalne doświadczenia użytkowników, czasem wzbogacone o sztuczną inteligencję."
+        "photoAlt": "Zdjęcie Anny Heliasz",
+        "p1": "Jestem Anna Heliasz — Full-Stack JavaScript Developer. Tworzę nowoczesne, funkcjonalne aplikacje internetowe i stale rozwijam swoje umiejętności.",
+        "p2": "Na froncie pracuję z Reactem i TypeScriptem, a na backendzie z Node.js/Express. W zależności od projektu korzystam z MongoDB lub PostgreSQL. Znam Firebase (uwierzytelnianie), REST APIs oraz publikację aplikacji na Netlify i Railway.",
+        "p3": "Zbudowałam m.in. SayRight (aplikacja do nauki wymowy z IPA, nagraniami native speakerów i informacją zwrotną od AI), serwis z memami i filmami z głosowaniem oraz tracker aplikacji o pracę. W projektach stawiam na przejrzysty kod, dostępność i szybkość działania.",
+        "p4": "Wcześniej uczyłam języka angielskiego, co pozwala mi łączyć umiejętności techniczne z doświadczeniem w tworzeniu intuicyjnych interfejsów w EN/PL/ES.",
+        "p5": "AI wykorzystuję wtedy, gdy realnie podnosi jakość projektu i mam pełną kontrolę nad jego działaniem oraz kosztami."
     },
     "contact": {
         "title": "Kontakt",
