@@ -21,7 +21,10 @@
         "highlights": "Najważniejsze funkcje",
         "stack": "Technologie",
         "moreTech": "+{{count}} więcej",
-        "lessTech": "Ukryj"
+        "lessTech": "Ukryj",
+        "kinds": {
+            "archive": "Archiwum"
+        }
     },
     "projects": {
         "sayright": {

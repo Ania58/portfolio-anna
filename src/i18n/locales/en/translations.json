@@ -21,7 +21,10 @@
         "highlights": "Highlights",
         "stack": "Tech stack",
         "moreTech": "+{{count}} more",
-        "lessTech": "Hide"
+        "lessTech": "Hide",
+        "kinds": {
+            "archive": "Archive"
+        }
     },
     "projects": {
         "sayright": {

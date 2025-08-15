@@ -32,7 +32,7 @@ export default function ProjectItemCompact({ project }: { project: ArchiveProjec
             <div className="flex items-center gap-2">
               <h3 className="font-semibold text-slate-900">{title}</h3>
               <span className="text-[10px] px-2 py-0.5 rounded-full ring-1 ring-white/40 bg-white/50 uppercase tracking-wide">
-                {project.kind}
+                 {t(`project.kinds.${project.kind}`)}
               </span>
             </div>
 

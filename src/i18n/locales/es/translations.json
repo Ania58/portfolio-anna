@@ -21,7 +21,10 @@
         "highlights": "Aspectos destacados",
         "stack": "Tecnologías",
         "moreTech": "+{{count}} más",
-        "lessTech": "Ocultar"
+        "lessTech": "Ocultar",
+        "kinds": {
+            "archive": "Archivo"
+        }
     },
     "projects": {
         "sayright": {
