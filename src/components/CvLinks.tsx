@@ -8,8 +8,9 @@ const CV_LINKS: Record<'en'|'pl'|'es', string> = {
 
 export default function CvLinks() {
   const { t, i18n } = useTranslation()
-  const lang = (i18n.language?.split('-')[0] ?? 'en') as 'en'|'pl'|'es'
-  const href = CV_LINKS[lang] || CV_LINKS.en
+  const current = (i18n.language?.split('-')[0] ?? 'en') as 'en'|'pl'|'es'
+  const href = CV_LINKS[current] || CV_LINKS.en
+  const others = (['en','pl','es'] as const).filter(l => l !== current)
 
   return (
     <div className="flex flex-col items-center gap-3">
@@ -27,17 +28,19 @@ export default function CvLinks() {
       <div className="text-sm text-slate-700 flex items-center gap-2">
         <span>{t('cv.otherLangs')}</span>
         <div className="flex gap-2">
-          <a className="underline hover:no-underline" href={CV_LINKS.en} target="_blank" rel="noopener noreferrer">
-            {t('cv.lang.en')}
-          </a>
-          <span>·</span>
-          <a className="underline hover:no-underline" href={CV_LINKS.pl} target="_blank" rel="noopener noreferrer">
-            {t('cv.lang.pl')}
-          </a>
-          <span>·</span>
-          <a className="underline hover:no-underline" href={CV_LINKS.es} target="_blank" rel="noopener noreferrer">
-            {t('cv.lang.es')}
-          </a>
+          {others.map((lng, idx) => (
+            <span key={lng} className="flex items-center gap-2">
+              {idx > 0 && <span>·</span>}
+              <a
+                className="underline hover:no-underline"
+                href={CV_LINKS[lng]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t(`cv.lang.${lng}`)}
+              </a>
+            </span>
+          ))}
         </div>
       </div>
     </div>
