@@ -93,6 +93,11 @@
         "email": "Email",
         "linkedin": "LinkedIn"
     },
+    "cv": {
+        "viewCurrent": "View CV (PDF)",
+        "otherLangs": "Other languages:",
+        "lang": { "en": "English", "pl": "Polish", "es": "Spanish" }
+    },
     "notFound": {
         "title": "Page not found",
         "description": "Sorry, the page you are looking for doesn't exist.",

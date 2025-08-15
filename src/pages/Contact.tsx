@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import CvLinks from '../components/CvLinks'
 
 const email = import.meta.env.VITE_EMAIL;
 
@@ -23,6 +24,9 @@ export default function Contact() {
         <h2 className="text-2xl font-bold mb-6 text-center">
           {t("contact.title")}
         </h2>
+         <div className="mb-6">
+          <CvLinks />
+        </div>
 
         <div className="flex flex-col items-center gap-4 text-lg">
           <a
