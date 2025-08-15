@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
-import { projects } from '../data/projects'
-import ProjectCard from './ProjectCard'
+import { archiveProjects } from '../data/archive'
+import ProjectItemCompact from './ProjectItemCompact'
 
 export default function Project() {
   const { t } = useTranslation()
@@ -10,12 +10,14 @@ export default function Project() {
       <h2 className="text-2xl font-bold mb-6 text-center">
         {t('sections.projects', 'Projects')}
       </h2>
-      <div className="flex flex-col gap-8 items-center">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+
+      <ul className="mx-auto max-w-4xl space-y-2">
+        {archiveProjects.map(p => (
+          <ProjectItemCompact key={p.id} project={p} />
         ))}
-      </div>
+      </ul>
     </section>
   )
 }
+
 
