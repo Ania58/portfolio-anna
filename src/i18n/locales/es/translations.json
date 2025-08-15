@@ -40,6 +40,38 @@
             "note": "No es un sitio web completamente desarrollado, solo una pequeña demo."
         }
     },
+    "archive": {
+        "dashboard": {
+            "title": "Dashboard (Project Break 1)",
+            "value": "Reloj 24h con fecha, estación meteorológica, generador de contraseñas y lista de enlaces — con fondos de Unsplash.",
+            "note": "Proyecto realizado como parte del bootcamp The Bridge — un mini-dashboard funcional y atractivo."
+        },
+        "clothes-shop": {
+            "title": "Tienda de ropa (SSR)",
+            "value": "Catálogo y panel de administración con CRUD de productos usando Node/Express y MongoDB (Mongoose).",
+            "note": "Proyecto de bootcamp en The Bridge. Versión de demostración desplegada en Render (puede cargar más lento)."
+        },
+        "blog-web": {
+            "title": "Blog Web",
+            "value": "Blog con posts y comentarios, autenticación con Firebase y vistas en EJS (CRUD con control de propietario).",
+            "note": "Pequeño blog de demostración creado para practicar operaciones CRUD. Alojado en Render (carga más lenta)."
+        },
+        "harry-potter": {
+            "title": "Harry Potter Explorer",
+            "value": "Búsqueda de personajes, hechizos, libros y películas desde PotterDB API (Express + Axios + EJS).",
+            "note": "Proyecto para experimentar con APIs públicas y plantillas EJS. Alojado en Render (posible carga más lenta)."
+        },
+        "doctor-who": {
+            "title": "Doctor Who Explorer",
+            "value": "Explora y busca personajes, especies y ubicaciones desde una API pública, con limpieza de URLs de imágenes.",
+            "note": "Proyecto de práctica para integración de APIs y renderizado EJS. Alojado en Render (puede cargar más lento)."
+        },
+        "jobsync": {
+            "title": "JobSync",
+            "value": "Gestor de candidaturas — frontend en React + Tailwind; backend en Node/Express + PostgreSQL.",
+            "note": "Prototipo de gestor de candidaturas — versión de demostración en Render (base de datos PostgreSQL actualmente fuera de línea)."
+        }
+    },
     "about": {
         "title": "Sobre mí",
         "photoAlt": "Foto de Anna Heliasz",

@@ -40,6 +40,38 @@
             "note": "To nie jest w pełni rozwinięta strona, a jedynie małe demo."
         }
     },
+    "archive": {
+        "dashboard": {
+            "title": "Dashboard (Project Break 1)",
+            "value": "Zegar 24h z datą, stacja pogodowa, generator haseł i lista linków — z rotującym tłem z Unsplash.",
+            "note": "Projekt zaliczeniowy w bootcampie The Bridge — funkcjonalny, estetyczny mini-dashboard."
+        },
+        "clothes-shop": {
+            "title": "Sklep z odzieżą (SSR)",
+            "value": "Katalog i panel admina z CRUD produktów w Node/Express i MongoDB (Mongoose).",
+            "note": "Projekt bootcampowy w The Bridge. Wersja demonstracyjna działa na Render (może ładować się wolniej)."
+        },
+        "blog-web": {
+            "title": "Blog Web",
+            "value": "Blog z postami i komentarzami, logowanie przez Firebase, widoki EJS (CRUD z kontrolą właściciela).",
+            "note": "Mały blog demonstracyjny stworzony do ćwiczenia operacji CRUD. Hostowany na Render (wolniejsze ładowanie)."
+        },
+        "harry-potter": {
+            "title": "Harry Potter Explorer",
+            "value": "Wyszukiwanie postaci, zaklęć, książek i filmów z PotterDB API (Express + Axios + EJS).",
+            "note": "Projekt do nauki integracji z publicznymi API i szablonami EJS. Hostowany na Render (może ładować się wolniej)."
+        },
+        "doctor-who": {
+            "title": "Doctor Who Explorer",
+            "value": "Przeglądanie i wyszukiwanie postaci, gatunków i lokacji z publicznego API, z poprawką adresów obrazków.",
+            "note": "Ćwiczeniowy projekt API + EJS. Hostowany na Render (możliwe wolniejsze wczytywanie)."
+        },
+        "jobsync": {
+            "title": "JobSync",
+            "value": "Tracker aplikacji o pracę — frontend React + Tailwind; backend Node/Express + PostgreSQL.",
+            "note": "Prototyp trackera aplikacji o pracę — wersja demonstracyjna na Render (baza PostgreSQL obecnie offline)."
+        }
+    },
     "about": {
         "title": "O mnie",
         "photoAlt": "Zdjęcie Anny Heliasz",

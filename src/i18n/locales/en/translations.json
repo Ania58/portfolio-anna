@@ -40,6 +40,38 @@
             "note": "This is not a fully fledged website, just a small demo."
         }
     },
+    "archive": {
+        "dashboard": {
+            "title": "Dashboard (Project Break 1)",
+            "value": "24h clock + date, weather station, secure password generator, and saved links — with rotating Unsplash backgrounds.",
+            "note": "Developed as part of a full-stack project at The Bridge bootcamp — a functional, visually engaging mini-dashboard."
+        },
+        "clothes-shop": {
+            "title": "Clothing Shop (SSR)",
+            "value": "Catalog and admin dashboard with CRUD products using Node/Express and MongoDB (Mongoose).",
+            "note": "Created as a bootcamp project at The Bridge. Deployed on Render for demonstration purposes (may load slower)."
+        },
+        "blog-web": {
+            "title": "Blog Web",
+            "value": "Blog with posts and comments, Firebase Authentication, and EJS views (CRUD with ownership checks).",
+            "note": "Small-scale demo blog built to practice full-stack CRUD operations. Hosted on Render (slower load)."
+        },
+        "harry-potter": {
+            "title": "Harry Potter Explorer",
+            "value": "Search characters, spells, books, and movies from PotterDB API (Express + Axios + EJS).",
+            "note": "Built to experiment with public APIs and EJS templating. Hosted on Render (may have slower response times)."
+        },
+        "doctor-who": {
+            "title": "Doctor Who Explorer",
+            "value": "Browse and search characters, species, and locations from a public API, with image cleanup rules.",
+            "note": "Practice project for API integration and EJS rendering. Hosted on Render (slower load possible)."
+        },
+        "jobsync": {
+            "title": "JobSync",
+            "value": "Job application tracker — React + Tailwind frontend; Node/Express + PostgreSQL backend.",
+            "note": "Job application tracker prototype — demo site hosted on Render (PostgreSQL database currently offline)."
+        }
+    },
     "about": {
         "title": "About",
         "photoAlt": "Photo of Anna Heliasz",
