@@ -11,7 +11,8 @@
         "ctaContact": "Napisz do mnie"
     },
     "sections": { 
-        "projects": "Najważniejsze projekty" 
+        "projects": "Najważniejsze projekty",
+        "archive": "Pozostałe projekty" 
     },
     "project": {
         "live": "Na żywo",
@@ -41,6 +42,7 @@
         }
     },
     "archive": {
+        "intro": "Dodatkowe i wcześniejsze projekty — w formie skróconej.",
         "dashboard": {
             "title": "Dashboard (Project Break 1)",
             "value": "Zegar 24h z datą, stacja pogodowa, generator haseł i lista linków — z rotującym tłem z Unsplash.",

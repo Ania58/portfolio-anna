@@ -11,7 +11,8 @@
         "ctaContact": "Contact me"
     },
     "sections": { 
-        "projects": "Featured Projects" 
+        "projects": "Featured Projects",
+        "archive": "Other Projects" 
     },
     "project": {
         "live": "Live",
@@ -41,6 +42,7 @@
         }
     },
     "archive": {
+        "intro": "Additional and earlier projects — compact view.",
         "dashboard": {
             "title": "Dashboard (Project Break 1)",
             "value": "24h clock + date, weather station, secure password generator, and saved links — with rotating Unsplash backgrounds.",

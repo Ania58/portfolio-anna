@@ -70,7 +70,7 @@ export default function ProjectItemCompact({ project }: { project: ArchiveProjec
               rel="noopener noreferrer"
               className="text-sm px-3 py-1 rounded-md ring-1 ring-white/50 bg-white/60 hover:bg-white"
             >
-              FE
+                {t('project.codeFrontend')}
             </a>
           )}
           {project.links?.code?.backend && (
@@ -80,7 +80,7 @@ export default function ProjectItemCompact({ project }: { project: ArchiveProjec
               rel="noopener noreferrer"
               className="text-sm px-3 py-1 rounded-md ring-1 ring-white/50 bg-white/60 hover:bg-white"
             >
-              BE
+              {t('project.codeBackend')}
             </a>
           )}
         </div>

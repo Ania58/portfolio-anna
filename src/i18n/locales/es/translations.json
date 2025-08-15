@@ -11,7 +11,8 @@
         "ctaContact": "Contáctame"
     },
     "sections": { 
-        "projects": "Proyectos destacados" 
+        "projects": "Proyectos destacados",
+        "archive": "Otros proyectos" 
     },
     "project": {
         "live": "En vivo",
@@ -41,6 +42,7 @@
         }
     },
     "archive": {
+        "intro": "Proyectos adicionales y anteriores — vista compacta.",
         "dashboard": {
             "title": "Dashboard (Project Break 1)",
             "value": "Reloj 24h con fecha, estación meteorológica, generador de contraseñas y lista de enlaces — con fondos de Unsplash.",
