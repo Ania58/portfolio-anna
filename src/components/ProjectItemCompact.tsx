@@ -1,13 +1,20 @@
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 import type { ArchiveProject } from '../data/archive'
 
 export default function ProjectItemCompact({ project }: { project: ArchiveProject }) {
   const { t } = useTranslation()
+  const [showAll, setShowAll] = useState(false)
+
   const baseKey = `archive.${project.id}` as const
   const title = t(`${baseKey}.title`, project.id)
   const value = t(`${baseKey}.value`, '')
+  const note  = project.links?.noteKey ? t(project.links.noteKey) : undefined
 
-  const note = project.links?.noteKey ? t(project.links.noteKey) : undefined
+  const stack = project.stack ?? []
+  const max = 4
+  const extra = Math.max(0, stack.length - max)
+  const visibleStack = showAll ? stack : stack.slice(0, max)
 
   return (
     <li className="group rounded-xl border border-white/30 bg-white/40 backdrop-blur
@@ -31,17 +38,29 @@ export default function ProjectItemCompact({ project }: { project: ArchiveProjec
 
             {value && <p className="text-sm text-slate-700/90">{value}</p>}
 
-            {project.stack && project.stack.length > 0 && (
-              <div className="mt-2 flex flex-wrap gap-1.5">
-                {project.stack.slice(0, 4).map((tech, i) => (
-                  <span key={`${project.id}-t-${i}`} className="text-xs px-2 py-0.5 rounded-full ring-1 ring-white/40 bg-white/50">
+            {stack.length > 0 && (
+              <div className="mt-2 flex flex-wrap items-center gap-1.5">
+                {visibleStack.map((tech, i) => (
+                  <span
+                    key={`${project.id}-t-${i}`}
+                    className="text-xs px-2 py-0.5 rounded-full ring-1 ring-white/40 bg-white/50"
+                  >
                     {tech}
                   </span>
                 ))}
-                {project.stack.length > 4 && (
-                  <span className="text-xs px-2 py-0.5 rounded-full ring-1 ring-white/40 bg-white/50">
-                    +{project.stack.length - 4}
-                  </span>
+
+                {extra > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => setShowAll(v => !v)}
+                    aria-expanded={showAll}
+                    className="text-xs px-2 py-0.5 rounded-full ring-1 ring-white/50 bg-white/60
+                               hover:bg-white cursor-pointer focus:outline-none focus:ring"
+                  >
+                    {showAll
+                      ? t('project.lessTech', 'Hide')
+                      : t('project.moreTech', { count: extra, defaultValue: '+{{count}} more' })}
+                  </button>
                 )}
               </div>
             )}
@@ -70,7 +89,7 @@ export default function ProjectItemCompact({ project }: { project: ArchiveProjec
               rel="noopener noreferrer"
               className="text-sm px-3 py-1 rounded-md ring-1 ring-white/50 bg-white/60 hover:bg-white"
             >
-                {t('project.codeFrontend')}
+              {t('project.codeFrontend')}
             </a>
           )}
           {project.links?.code?.backend && (

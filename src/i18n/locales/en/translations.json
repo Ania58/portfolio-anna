@@ -19,7 +19,9 @@
         "codeFrontend": "Frontend Code",
         "codeBackend": "Backend Code",
         "highlights": "Highlights",
-        "stack": "Tech stack"
+        "stack": "Tech stack",
+        "moreTech": "+{{count}} more",
+        "lessTech": "Hide"
     },
     "projects": {
         "sayright": {

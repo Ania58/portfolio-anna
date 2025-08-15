@@ -19,7 +19,9 @@
         "codeFrontend": "Kod frontendu",
         "codeBackend": "Kod backendu",
         "highlights": "Najważniejsze funkcje",
-        "stack": "Technologie"
+        "stack": "Technologie",
+        "moreTech": "+{{count}} więcej",
+        "lessTech": "Ukryj"
     },
     "projects": {
         "sayright": {
