@@ -1,7 +1,18 @@
 import { useTranslation } from 'react-i18next'
+import { useSEO } from '../hooks/useSEO'
 
 export default function About() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const lang = (i18n.language?.split('-')[0] ?? 'en').toLowerCase()
+  const locale = lang === 'pl' ? 'pl_PL' : lang === 'es' ? 'es_ES' : 'en_US'
+
+  useSEO({
+    title: `${t('about.title')} — ${t('hero.title')}`,
+    description: t('about.p1'),
+    url: 'https://anna-dev.netlify.app/about',
+    image: 'https://anna-dev.netlify.app/images/logo.png',
+    locale,
+  })
 
   return (
     <section className="py-8 px-4">
