@@ -1,8 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useSEO } from '../hooks/useSEO'
 
 export default function NotFound() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = (i18n.language?.split('-')[0] ?? 'en').toLowerCase()
+  const locale = lang === 'pl' ? 'pl_PL' : lang === 'es' ? 'es_ES' : 'en_US'
+
+  useSEO({
+    title: `${t('notFound.title')} — ${t('hero.title')}`,
+    description: t('notFound.description'),
+    url: 'https://anna-dev.netlify.app/404',
+    image: 'https://anna-dev.netlify.app/images/logo.png',
+    locale,
+  })
 
   return (
     <section className="py-8 px-4 text-center">
