@@ -1,14 +1,24 @@
 import { useTranslation } from "react-i18next";
 import CvLinks from '../components/CvLinks'
+import { useSEO } from '../hooks/useSEO'
 
 const email = import.meta.env.VITE_EMAIL;
 
 export default function Contact() {
   const { t, i18n } = useTranslation();
+  const lang = (i18n.language?.split('-')[0] ?? 'en').toLowerCase()
+  const seoLocale = lang === 'pl' ? 'pl_PL' : lang === 'es' ? 'es_ES' : 'en_US'
 
-  const locale = i18n.language;
+  useSEO({
+    title: `${t('contact.title')} — ${t('hero.title')}`,
+    description: `${t('contact.title')} — ${t('hero.subtitle')}`,
+    url: 'https://anna-dev.netlify.app/contact',
+    image: 'https://anna-dev.netlify.app/images/logo.png',
+    locale: seoLocale,
+  })
+
   const linkedinUrl =
-    locale === "es"
+    lang === "es"
       ? "https://www.linkedin.com/in/anna-heliasz-dev/"
       : "https://www.linkedin.com/in/anna-heliasz-dev/?locale=en_US";
 
