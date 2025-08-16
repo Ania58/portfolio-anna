@@ -1,9 +1,20 @@
 import { useTranslation } from 'react-i18next'
 import { projects } from '../data/projects'
 import ProjectCard from '../components/ProjectCard'
+import { useSEO } from '../hooks/useSEO'
 
 export default function Home() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const lang = (i18n.language?.split('-')[0] ?? 'en').toLowerCase()
+  const locale = lang === 'pl' ? 'pl_PL' : lang === 'es' ? 'es_ES' : 'en_US'
+
+  useSEO({
+    title: t('hero.title'),
+    description: t('hero.subtitle'),
+    url: 'https://anna-dev.netlify.app/',
+    image: 'https://anna-dev.netlify.app/images/logo.png', 
+    locale,
+  })
 
   return (
     <main id="main" className="mx-auto w-full max-w-4xl px-4 sm:px-6 py-10">
